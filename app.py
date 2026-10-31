@@ -1,7 +1,7 @@
 # Super App Demo - Flask backend (Python)
 from flask import Flask, jsonify, request, send_from_directory
 
-app = Flask(__name__, static_folder="static")
+app = Flask(__name__, static_folder="static", static_url_path="")
 
 SERVICES = [
     {"icon": "🚗", "title": "Ride Services", "text": "Bikes, cars aur rickshaw ke liye verified drivers ka network."},
