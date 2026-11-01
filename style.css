@@ -1,5 +1,5 @@
-:root{--bg:#070b1a;--card:rgba(255,255,255,.06);--line:rgba(255,255,255,.14);
---a:#22d3ee;--b:#a78bfa;--c:#f472b6;--text:#e8ecff;--mut:#9aa4c7}
+:root{--bg:#04060d;--card:rgba(255,255,255,.06);--line:rgba(255,255,255,.14);
+--a:#f5c542;--b:#d4a017;--c:#ffe08a;--text:#e8ecff;--mut:#9aa4c7}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
@@ -10,10 +10,10 @@ body{font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(
 @keyframes float{50%{transform:translate(40px,-40px) scale(1.15)}}
 .topbar{text-align:center;font-size:.8rem;padding:8px;background:linear-gradient(90deg,var(--a),var(--b),var(--c));color:#07101f;font-weight:600}
 .nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:12px 5%;
-background:rgba(7,11,26,.7);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+background:rgba(4,6,13,.7);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
 .brand{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--text)}
 .logo{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-weight:800;font-size:1.3rem;
-background:linear-gradient(135deg,var(--a),var(--b));color:#07101f;box-shadow:0 0 24px rgba(34,211,238,.5)}
+background:linear-gradient(135deg,var(--a),var(--b));color:#07101f;box-shadow:0 0 24px rgba(245,197,66,.5)}
 .brand b{letter-spacing:3px;display:block}.brand small{color:var(--mut);font-size:.7rem}
 nav a{color:var(--mut);text-decoration:none;margin-left:22px;font-weight:500;transition:.25s}
 nav a:hover{color:var(--a)}
@@ -24,7 +24,7 @@ h1{font-size:clamp(2.4rem,8vw,4.6rem);line-height:1.1;margin:22px 0}
 em{font-style:normal;background:linear-gradient(90deg,var(--a),var(--b),var(--c));-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p{max-width:620px;margin:0 auto 30px;color:var(--mut)}
 .btn{display:inline-block;padding:13px 28px;border-radius:14px;text-decoration:none;font-weight:700;margin:6px;transition:.3s;border:1px solid transparent}
-.primary{background:linear-gradient(135deg,var(--a),var(--b));color:#07101f;box-shadow:0 8px 28px rgba(34,211,238,.35)}
+.primary{background:linear-gradient(135deg,var(--a),var(--b));color:#07101f;box-shadow:0 8px 28px rgba(245,197,66,.35)}
 .primary:hover{transform:translateY(-3px)}
 .ghost{border-color:var(--line);color:var(--text);background:var(--card)}
 .ghost:hover{border-color:var(--a)}
@@ -36,24 +36,24 @@ h2{font-size:clamp(1.8rem,5vw,2.6rem);text-align:center;margin-bottom:10px}
 .sub{text-align:center;color:var(--mut);margin-bottom:30px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:30px}
 .card,.glass{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px;backdrop-filter:blur(14px);transition:.35s}
-.card:hover{transform:translateY(-8px);border-color:var(--a);box-shadow:0 18px 40px rgba(34,211,238,.18)}
+.card:hover{transform:translateY(-8px);border-color:var(--a);box-shadow:0 18px 40px rgba(245,197,66,.18)}
 .card .ic{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;font-size:1.7rem;margin-bottom:14px;
-background:linear-gradient(135deg,rgba(34,211,238,.25),rgba(167,139,250,.25))}
+background:linear-gradient(135deg,rgba(245,197,66,.25),rgba(212,160,23,.25))}
 .card h3{margin-bottom:8px}.card p{color:var(--mut)}
 .card span{font-size:1.8rem}
 .ticks{list-style:none;margin:16px 0 22px}.ticks li::before{content:"✔ ";color:var(--a)}
 .shot{height:230px;border-radius:22px;position:relative;overflow:hidden;border:1px solid var(--line);transition:.35s}
 .shot:hover{transform:scale(1.03)}
-.s1{background:linear-gradient(135deg,#0ea5e9,#312e81)}.s2{background:linear-gradient(135deg,#a78bfa,#be185d)}.s3{background:linear-gradient(135deg,#14b8a6,#1e3a8a)}
+.s1{background:linear-gradient(135deg,#1e3a8a,#0a1230)}.s2{background:linear-gradient(135deg,#d4a017,#3a2a05)}.s3{background:linear-gradient(135deg,#0f2a6b,#8a6a10)}
 .shot figcaption{position:absolute;bottom:0;left:0;right:0;padding:18px;font-weight:700;background:linear-gradient(transparent,rgba(0,0,0,.7))}
 .shot small{display:block;color:#cbd5ff;font-weight:400}
 .video{text-align:center;min-height:260px;display:grid;place-items:center}
 .play{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;font-size:2rem;margin:0 auto 12px;
 background:linear-gradient(135deg,var(--c),var(--b));animation:pulse 2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(244,114,182,.6)}100%{box-shadow:0 0 0 28px rgba(244,114,182,0)}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,224,138,.6)}100%{box-shadow:0 0 0 28px rgba(255,224,138,0)}}
 footer{text-align:center;padding:36px 5% 100px;color:var(--mut);border-top:1px solid var(--line);margin-top:40px}
 #chatBtn{position:fixed;right:18px;bottom:18px;width:62px;height:62px;border-radius:50%;border:0;font-size:1.7rem;z-index:90;
-background:linear-gradient(135deg,var(--a),var(--b));box-shadow:0 8px 28px rgba(34,211,238,.5);cursor:pointer}
+background:linear-gradient(135deg,var(--a),var(--b));box-shadow:0 8px 28px rgba(245,197,66,.5);cursor:pointer}
 #chatBox{position:fixed;right:14px;bottom:92px;width:min(360px,calc(100% - 28px));height:440px;z-index:95;display:flex;flex-direction:column;
 background:rgba(12,17,38,.95);border:1px solid var(--line);border-radius:22px;overflow:hidden;backdrop-filter:blur(18px)}
 #chatBox[hidden]{display:none}
@@ -69,7 +69,7 @@ background:rgba(12,17,38,.95);border:1px solid var(--line);border-radius:22px;ov
 .reveal{opacity:0;transform:translateY(30px);transition:.7s}.reveal.show{opacity:1;transform:none}
 @media(max-width:760px){
  #burger{display:block}
- nav{position:absolute;top:100%;left:0;right:0;flex-direction:column;background:rgba(7,11,26,.97);padding:10px 5%;display:none}
+ nav{position:absolute;top:100%;left:0;right:0;flex-direction:column;background:rgba(4,6,13,.97);padding:10px 5%;display:none}
  nav.open{display:flex}nav a{margin:0;padding:14px 0;border-bottom:1px solid var(--line)}
  .hero{padding-top:60px}
 }
@@ -88,14 +88,14 @@ background:rgba(12,17,38,.95);border:1px solid var(--line);border-radius:22px;ov
     linear-gradient(var(--inner),var(--inner)) padding-box,
     conic-gradient(from var(--ang),transparent 0 55%,var(--a) 70%,var(--b) 85%,var(--c) 95%,transparent 100%) border-box;
   animation:spin 3s linear infinite;
-  box-shadow:0 0 22px rgba(34,211,238,.28),inset 0 0 16px rgba(167,139,250,.14);
+  box-shadow:0 0 22px rgba(245,197,66,.28),inset 0 0 16px rgba(212,160,23,.14);
   transition:transform .3s,box-shadow .3s;
 }
-.btn:hover{transform:translateY(-4px) scale(1.04);box-shadow:0 0 36px rgba(34,211,238,.6),inset 0 0 22px rgba(167,139,250,.3)}
+.btn:hover{transform:translateY(-4px) scale(1.04);box-shadow:0 0 36px rgba(245,197,66,.6),inset 0 0 22px rgba(212,160,23,.3)}
 .btn.primary{
   color:#04101c;text-shadow:none;
   background:
-    linear-gradient(135deg,#5eead4,#67e8f9 45%,#c4b5fd) padding-box,
+    linear-gradient(135deg,#ffe08a,#f5c542 45%,#d4a017) padding-box,
     conic-gradient(from var(--ang),transparent 0 50%,#fff 68%,var(--c) 85%,transparent 100%) border-box;
 }
 .btn.ghost{color:#fff}
@@ -111,23 +111,23 @@ background:rgba(12,17,38,.95);border:1px solid var(--line);border-radius:22px;ov
 }
 .card:nth-child(2n),.stat:nth-child(2n){animation-duration:7.5s;animation-direction:reverse}
 .card:nth-child(3n){animation-duration:9s}
-.card:hover{box-shadow:0 18px 44px rgba(167,139,250,.28),0 0 26px rgba(34,211,238,.25)}
+.card:hover{box-shadow:0 18px 44px rgba(212,160,23,.28),0 0 26px rgba(245,197,66,.25)}
 .shot{background:none;border:2px solid transparent}
 .s1,.s2,.s3{background-clip:padding-box}
-.s1{background:linear-gradient(135deg,#0ea5e9,#312e81) padding-box,conic-gradient(from var(--ang),rgba(255,255,255,.1) 0 55%,var(--a) 75%,var(--c) 95%,rgba(255,255,255,.1)) border-box}
-.s2{background:linear-gradient(135deg,#a78bfa,#be185d) padding-box,conic-gradient(from var(--ang),rgba(255,255,255,.1) 0 55%,var(--a) 75%,var(--c) 95%,rgba(255,255,255,.1)) border-box}
-.s3{background:linear-gradient(135deg,#14b8a6,#1e3a8a) padding-box,conic-gradient(from var(--ang),rgba(255,255,255,.1) 0 55%,var(--a) 75%,var(--c) 95%,rgba(255,255,255,.1)) border-box}
+.s1{background:linear-gradient(135deg,#1e3a8a,#0a1230) padding-box,conic-gradient(from var(--ang),rgba(255,255,255,.1) 0 55%,var(--a) 75%,var(--c) 95%,rgba(255,255,255,.1)) border-box}
+.s2{background:linear-gradient(135deg,#d4a017,#3a2a05) padding-box,conic-gradient(from var(--ang),rgba(255,255,255,.1) 0 55%,var(--a) 75%,var(--c) 95%,rgba(255,255,255,.1)) border-box}
+.s3{background:linear-gradient(135deg,#0f2a6b,#8a6a10) padding-box,conic-gradient(from var(--ang),rgba(255,255,255,.1) 0 55%,var(--a) 75%,var(--c) 95%,rgba(255,255,255,.1)) border-box}
 
 /* Readable text */
 .card h3,.card b{color:#fff;font-size:1.2rem;font-weight:800}
 .card p,.hero p,.sub,.stat span{color:var(--text-soft)}
-.card .ic{box-shadow:0 0 18px rgba(34,211,238,.35)}
+.card .ic{box-shadow:0 0 18px rgba(245,197,66,.35)}
 .ticks li{color:#fff;font-weight:600;margin-bottom:6px}
 .shot figcaption{font-size:1.1rem;text-shadow:0 2px 6px #000}
 
 /* Nav links as small pill buttons */
 nav a{padding:8px 16px;border-radius:99px;color:#e8ecff;font-weight:600;border:1px solid transparent}
-nav a:hover{border-color:var(--a);background:rgba(34,211,238,.1);color:#fff;box-shadow:0 0 16px rgba(34,211,238,.35)}
+nav a:hover{border-color:var(--a);background:rgba(245,197,66,.1);color:#fff;box-shadow:0 0 16px rgba(245,197,66,.35)}
 
 /* Chat button with spinning light ring */
 #chatBtn{border:3px solid transparent;
@@ -139,11 +139,11 @@ nav a:hover{border-color:var(--a);background:rgba(34,211,238,.1);color:#fff;box-
 @media(prefers-reduced-motion:reduce){.btn,.card,.glass,.stat,.shot,.video,#chatBtn{animation:none}}
 
 /* ===== V3: neon red + blue orbiting light (like the reference picture) ===== */
-:root{--red:#ff3b4f;--blue:#3b82ff;--a:#4d8dff;--b:#9b6bff;--c:#ff4d5e;--bg:#050813;--dur:5s;--dir:normal}
+:root{--red:#f5c542;--blue:#c8921a;--a:#f5c542;--b:#d4a017;--c:#ffe08a;--bg:#020308;--dur:5s;--dir:normal}
 body{background:var(--bg) 
-  linear-gradient(rgba(70,110,255,.05) 1px,transparent 1px) 0 0/42px 42px,
-  linear-gradient(90deg,rgba(70,110,255,.05) 1px,transparent 1px) 0 0/42px 42px}
-body{background-color:var(--bg);background-image:linear-gradient(rgba(70,110,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(70,110,255,.05) 1px,transparent 1px);background-size:42px 42px}
+  linear-gradient(rgba(245,197,66,.05) 1px,transparent 1px) 0 0/42px 42px,
+  linear-gradient(90deg,rgba(245,197,66,.05) 1px,transparent 1px) 0 0/42px 42px}
+body{background-color:var(--bg);background-image:linear-gradient(rgba(245,197,66,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(245,197,66,.05) 1px,transparent 1px);background-size:42px 42px}
 
 /* shared: two light heads (red + blue) running around the line */
 .btn,.card,.glass,.stat,.shot,.video{
@@ -178,9 +178,9 @@ body{background-color:var(--bg);background-image:linear-gradient(rgba(70,110,255
   box-shadow:none}
 .btn::after{background:#0c1230}
 .btn.primary{color:#060a18;text-shadow:none;
-  background:linear-gradient(100deg,#ff5a6e,#7a7bff 55%,#4d8dff) padding-box,
+  background:linear-gradient(100deg,#ffe08a,#f5c542 55%,#f5c542) padding-box,
   conic-gradient(from var(--ang),rgba(255,255,255,.1) 0 5%,var(--red) 20%,#fff 30%,rgba(255,255,255,.1) 40%,rgba(255,255,255,.1) 55%,var(--blue) 72%,#fff 80%,rgba(255,255,255,.1) 92%) border-box}
-.btn.primary::after{background:linear-gradient(100deg,#ff5a6e,#7a7bff 55%,#4d8dff)}
+.btn.primary::after{background:linear-gradient(100deg,#ffe08a,#f5c542 55%,#f5c542)}
 .btn:hover{box-shadow:none;transform:translateY(-4px) scale(1.04)}
 .card:hover{box-shadow:none}
 
@@ -208,7 +208,7 @@ body{background-color:var(--bg);background-image:linear-gradient(rgba(70,110,255
 /* chat button: red/blue ring */
 #chatBtn{background:linear-gradient(135deg,#0c1230,#162050) padding-box,
   conic-gradient(from var(--ang),transparent 0 8%,var(--red) 25%,transparent 45%,transparent 55%,var(--blue) 75%,transparent 92%) border-box;
-  box-shadow:0 0 24px rgba(255,59,79,.35),0 0 24px rgba(59,130,255,.35)}
+  box-shadow:0 0 24px rgba(245,197,66,.35),0 0 24px rgba(200,146,26,.35)}
 
 @media(max-width:760px){.dp{width:92px;height:92px;font-size:2.3rem}.dps{gap:26px}}
 @media(prefers-reduced-motion:reduce){.dp,.logo,.dp::before,.dp::after,.logo::before,.logo::after,.btn::before,.card::before,.glass::before,.stat::before,.shot::before,.video::before{animation:none}}
